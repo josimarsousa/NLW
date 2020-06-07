@@ -22,7 +22,6 @@ function getCities(event){
     const indexOfSelectedState = event.target.selectedIndex
     stateInput.value = event.target.options[indexOfSelectedState].text
 
-
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
 
     citySelect.innerHTML = "<option value>Selecione a cidade</option>"
